@@ -12,6 +12,8 @@
                         #".*/build/logo\.png"
                         #".*/build/favicon\.png"
                         #"resources/graphql-playground/index\.html"]}
+  :deploy-repositories [["releases"  {:sign-releases false :url "https://clojars.org/repo"}]
+                        ["snapshots" {:sign-releases false :url "https://clojars.org/repo"}]]
   :resource-paths ["target/resources"]
   :hooks [leiningen.resource]
   :profiles {:dev {:plugins [[lein-resource "16.9.1"]]}})
