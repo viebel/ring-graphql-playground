@@ -1,0 +1,3 @@
+[submodule "ext/graphql-playground"]
+	path = ext/graphql-playground
+	url = git@github.com:prisma-labs/graphql-playground.git
